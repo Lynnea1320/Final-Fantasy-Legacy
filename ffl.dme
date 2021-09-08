@@ -1,0 +1,38 @@
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+// END_FILE_DIR
+
+// BEGIN_INCLUDE
+#include "ability.dm"
+#include "admin.dm"
+#include "area.dm"
+#include "audio.dm"
+#include "bank.dm"
+#include "clans.dm"
+#include "client.dm"
+#include "debug.dm"
+#include "menu.dm"
+#include "misc.dm"
+#include "mob.dm"
+#include "monster.dm"
+#include "nbattle.dm"
+#include "nparty.dm"
+#include "npc.dm"
+#include "obj.dm"
+#include "quest.dm"
+#include "save.dm"
+#include "screen.dm"
+#include "shop.dm"
+#include "statablt.dm"
+#include "status_effects.dm"
+#include "turf.dm"
+#include "world.dm"
+#include "worldmap.dmp"
+#include "feats\ferry\ferry.dm"
+#include "feats\race\races.dm"
+// END_INCLUDE
+
+// BEGIN_PREFERENCES
+// END_PREFERENCES
+// BEGIN_INTERNALS
+// END_INTERNALS
