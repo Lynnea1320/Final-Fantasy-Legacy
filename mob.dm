@@ -125,7 +125,7 @@ mob/PC/proc
 					else if(istype(A,/obj/NPC/race_announcer)) chocobo_race_screen("chocobo_race_menu")
 					else if(istype(A,/obj/NPC/vehicule))
 						if(A:chestnum in src.treasure) return
-						if(src.contents.len>=20) {msg("you can't hold any more items.");return}
+						if(src.contents.len>=20) {msg("You can't hold any more items.");return}
 						msg(A:message)
 						var/obj/item2 = A:giveitem
 						var/obj/Ability/Basic/Item/O = locate(item2) in src.contents
