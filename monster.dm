@@ -3361,6 +3361,7 @@ mob/monster
 					O = new O
 					BLoc.obj_reward[O] = Killer
 		//removing monster
+		//TODO: Make fade-out
 		for(var/obj/onmap/dmgnum/O in view(BLoc)) if(O.screentag==src) del(O)
 		overlays=list()
 		..()

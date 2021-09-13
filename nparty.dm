@@ -32,7 +32,7 @@ mob/PC
 			set desc="Kick a member from the party"
 			if(party.len==1){info(,list(src),"No one to kick out.");return}
 			else if(src!=party[1]){info(,list(src),"Only the party leader may do this.");return}
-			var/mob/PC/pkick = input(src,"Kick who from party?","Kick") as null|anything in party
+			var/mob/PC/pkick = input(src,"Kick whom from party?","Kick") as null|anything in party
 			if(pkick==src){info(,list(src),"Kickin' yourself eh? Why don't you leave instead?");return}
 			else if(pkick&&party.Find(pkick)) pkick.leave_party()
 		setup_party()
