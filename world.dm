@@ -73,7 +73,7 @@ var/const/ban_time=4000 					// ban time after user reached max_warning
 var/const/max_warning=2 					// max warning before auto-ban
 var/const/announce_wait_time=200 	// wait time for the announcement
 var/global/chat=1									// global var to turn on/off chat
-var/const/game_version = "4.23"
+var/const/game_version = "5.01"
 
 
 mob
@@ -108,7 +108,7 @@ mob
 				//crystal music..
 				usr<<sound(MUSIC_CRYSTAL,1,0,1)
 				//setting 'inmenu' so the users can press CENTER to make the loading screen popup
-				spawn(10) if(inmenu=="intro_screen") screen_textl(5,13,1,1,16,24,2,0,"© 1991 SQUäRE","intro_screen")
+				spawn(10) if(inmenu=="intro_screen") screen_textl(5,13,1,1,16,24,2,0,"ï¿½ 1991 SQUï¿½RE","intro_screen")
 				inmenu="intro_screen"
 			..()
 
