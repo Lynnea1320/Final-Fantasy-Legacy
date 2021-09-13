@@ -90,10 +90,20 @@ mob/PC/proc/BtlFrm(var/frame)
 		var/obj/O_TR = new()
 		var/obj/O_BL = new()
 		var/obj/O_TL = new()
-		var/icon/I_BR = new(init_icon,icon_state="[frame]1")
-		var/icon/I_TR = new(init_icon,icon_state="[frame]2")
-		var/icon/I_BL = new(init_icon,icon_state="[frame]3")
-		var/icon/I_TL = new(init_icon,icon_state="[frame]4")
+		var/list/battleStates
+		battleStates = icon_states(init_icon)
+		var/icon/I_BR = null
+		var/icon/I_TR = null
+		var/icon/I_BL = null
+		var/icon/I_TL = null
+		if(battleStates.Find("[frame]1"))
+			I_BR = new(init_icon,icon_state="[frame]1")
+		if(battleStates.Find("[frame]2"))
+			I_TR = new(init_icon,icon_state="[frame]2")
+		if(battleStates.Find("[frame]3"))
+			I_BL = new(init_icon,icon_state="[frame]3")
+		if(battleStates.Find("[frame]4"))
+			I_TL = new(init_icon,icon_state="[frame]4")
 		if(dir==EAST)	//on the other side of the moon... ..not.
 			I_BR.Flip(EAST);I_TR.Flip(EAST);I_BL.Flip(EAST);I_TL.Flip(EAST)
 			O_BR.pixel_x=32;O_TR.pixel_x=32;O_TR.pixel_y=32;O_TL.pixel_y=32
