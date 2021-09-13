@@ -995,7 +995,7 @@ mob/Mod/proc
 				if("IP")
 					var/BanIP = input(src,"Enter the exact IP to ban.","Ban IP")as null|text
 					if(BanIP)
-						if(!findText(BanIP,ascii2text(42)) && alert(src,"Optimize IP Ban for [BanIP]?","Ban","Yes","No") == "Yes") BanIP = get_token(BanIP,"1-3",46) + ascii2text(42)
+						if(!findtextEx(BanIP,ascii2text(42)) && alert(src,"Optimize IP Ban for [BanIP]?","Ban","Yes","No") == "Yes") BanIP = get_token(BanIP,"1-3",46) + ascii2text(42)
 						AddBan(null,BanIP)
 						var/reason = input(src,"Why are you banning?","Ban IP")as null|text
 						if(!reason)

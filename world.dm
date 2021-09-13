@@ -155,8 +155,9 @@ proc
 		var/string_pos = 1
 		var/token_pos = 1
 		var/token
-		while(string_pos<lentext(string))
-			var/string_npos = findText(string,C,string_pos,0)
+		while(string_pos<length(string))
+			//Revert to findText() if this no longer functions.
+			var/string_npos = findtextEx(string,C,string_pos,0)
 			var/token_str = copytext(string,string_pos,string_npos)
 			string_pos = string_npos + 1
 			if(token_s <= token_pos && token_e >= token_pos) token = token + token_str + C
@@ -929,8 +930,8 @@ proc
 		return list2text(textList, replacement_string)
 
 	text2list(text, separator)
-		var/textlength      = lentext(text)
-		var/separatorlength = lentext(separator)
+		var/textlength      = length(text)
+		var/separatorlength = length(separator)
 		var/list/textList   = new /list()
 		var/searchPosition  = 1
 		var/findPosition    = 1

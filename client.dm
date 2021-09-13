@@ -1506,7 +1506,7 @@ client
 				if("character_name")
 					switch(M.menupos)
 						if(1 to 71)
-							if(lentext(M.menuaction)<max_name_character)
+							if(length(M.menuaction)<max_name_character)
 								M.menuaction+=M.menulist[M.menupos]
 								M.namingway_refresh(M.menuaction)
 							else M<<SOUND_WRONG

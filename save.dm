@@ -231,7 +231,7 @@ mob
 									if(5){y=3;yo=8}
 								if(C.action[i])
 									if(allowed_characters.Find(C.class)) screen_textl(2.5,6.5,y,y,0,yo,5,,"[C.action[i]]","character_create_info")
-									else {var/string;for(var/s=1,s<=lentext("[C.action[i]]"),s++) string+=ascii2text(63);screen_textl(2.5,6.5,y,y,0,yo,5,,string,"character_create_info")}
+									else {var/string;for(var/s=1,s<=length("[C.action[i]]"),s++) string+=ascii2text(63);screen_textl(2.5,6.5,y,y,0,yo,5,,string,"character_create_info")}
 							del(C)
 
 
