@@ -11,6 +11,7 @@
 #include "clans.dm"
 #include "client.dm"
 #include "debug.dm"
+#include "hub.dm"
 #include "menu.dm"
 #include "misc.dm"
 #include "mob.dm"

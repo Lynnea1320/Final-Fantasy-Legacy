@@ -1,11 +1,8 @@
 //# world setting
 world
-	hub="Lunaofthemoon.FinalFantasyLegacy"
-	name="Final Fantasy Legacy"
+
 //	status="Official FFL server"
 	tick_lag=DEFAULT_PRIORITY
-	hub_password="2h3xxltlz9pco57o"
-	version=4
 	mob=/mob/character
 	view=8
 	New()
@@ -47,6 +44,7 @@ var/const/HIGH_PRIORITY = 1
 var/const/NORMAL_PRIORITY = 2
 var/const/LOW_PRIORITY = 3
 var/const/VERYLOW_PRIORITY = 4
+
 var/savefile/CR_Key = new("saves/cr_key.sav")
 var/savefile/CR_IP = new("saves/cr_ip.sav")
 var/list/Submit = new("saves/submit.sav")
