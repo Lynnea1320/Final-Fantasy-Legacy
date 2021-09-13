@@ -8,3 +8,7 @@ custom/
 *.lk
 
 *.int
+
+sayLog.txt
+
+*.sav
