@@ -35,7 +35,7 @@ world
 		..()
 
 //# world var/proc
-var/list/GAME_OWNER = list("Loud"="Head Admin","Uhfrank"="Head Admin","Lunaofthemoon"="Head Admin")
+var/list/GAME_OWNER = list("Loud"="Head Admin","Lunaofthemoon"="Head Admin")
 var/list/GAME_HOST = list("Lunaofthemoon")
 var/LOGFILE="ffl.log"							// Log file
 //tick lag stuff
@@ -106,7 +106,7 @@ mob
 				//crystal music..
 				usr<<sound(MUSIC_CRYSTAL,1,0,1)
 				//setting 'inmenu' so the users can press CENTER to make the loading screen popup
-				spawn(10) if(inmenu=="intro_screen") screen_textl(5,13,1,1,16,24,2,0,"ï¿½ 1991 SQUï¿½RE","intro_screen")
+				spawn(10) if(inmenu=="intro_screen") screen_textl(5,13,1,1,16,24,2,0,"© 1991 SQUäRE","intro_screen")
 				inmenu="intro_screen"
 			..()
 
