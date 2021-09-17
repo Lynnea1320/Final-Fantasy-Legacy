@@ -735,7 +735,7 @@ proc/Victory(list/Winners,exp_reward,gp_reward)
 		gp_reward = round(gp_reward + (((exp_reward*5)/100)*plength)/plength)
 		exp_reward = round(exp_reward + (((exp_reward*5)/100)*plength))
 	//dancin'!
-	for(var/i,i<=20,i++)
+	for(var/i=0,i<=20,i++)
 		switch(i)
 			if(0) for(var/mob/PC/p in Winners) if(p&&p.client&&p.HP>0){p.battle_screen("battle_message","Received [gp_reward] GP!");p.gold+=gp_reward;if(p.gold>GPLimit) p.gold=GPLimit}
 			if(6) for(var/mob/PC/p in Winners) if(p&&p.client&&p.HP>0){p.battle_screen("battle_message","Received [exp_reward] EXP!");p.exp+=exp_reward}
