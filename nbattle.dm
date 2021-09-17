@@ -4,7 +4,7 @@ var/list/bfield_location[] = new()//the list of battlefield's locations
 var/const/bfield_map_layer=3			//the map layer it search the battle fields
 var/const/battle_wait_time=20			//how much time in seconds we wait for the player to attack
 var/const/hunting_rate=8					//in steps
-var/const/encounter_rate=12				//in steps
+var/const/encounter_rate=22				//in steps
 
 // battle initialization
 proc

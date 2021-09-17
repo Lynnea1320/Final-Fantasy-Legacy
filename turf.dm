@@ -39,7 +39,7 @@ turf
 				if(p.encounter_rate<=0&&!p.Maxlev) // you have to under 99 to get into a random encounter
 					for(var/mob/PC/z in p.party) if(z.Maxlev) z.leave_party() // if your in a party, you get kicked out of the party!
 					p.StartBattle(src)
-			else p.encounter_rate = rand(round(encounter_rate/2),round(encounter_rate*1.5))
+			else p.encounter_rate = rand(round(encounter_rate/3),round(encounter_rate*1.2))
 area/note
 	icon='turf/note.dmi'
 	layer=10
