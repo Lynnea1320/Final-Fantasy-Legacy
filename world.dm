@@ -65,13 +65,13 @@ var/const/max_away_len=50					// max away message len
 var/const/flood_lines=12					// gives 12 lines max
 var/const/flood_interval=450			// for 45 secs.
 var/const/repeat_num=4 						// allow how many repeats
-var/const/max_swearing=2					// how swear allowed by line (triggering it will give a warning)
+var/const/max_swearing=5					// how swear allowed by line (triggering it will give a warning)
 var/const/mute_time=2000 					// mute time
 var/const/ban_time=4000 					// ban time after user reached max_warning
 var/const/max_warning=2 					// max warning before auto-ban
 var/const/announce_wait_time=200 	// wait time for the announcement
 var/global/chat=1									// global var to turn on/off chat
-var/const/game_version = "5.01"
+var/const/game_version = "5.03"
 
 
 mob
