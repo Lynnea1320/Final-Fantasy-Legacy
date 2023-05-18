@@ -1,6 +1,6 @@
 client
 	default_verb_category="Social"
-	fps = 45
+	fps = 60
 	Northeast()
 		if(!istype(usr,/mob/PC)) return
 		var/mob/PC/M=usr
